@@ -1,0 +1,42 @@
+input.radio {
+    opacity: 0;
+    -webkit-appearance: none;
+    display: inline-block;
+    vertical-align: middle;
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+input.radio:checked~.bullet {
+    position: absolute;
+    opacity: 1;
+}
+
+input.radio:checked~div {
+    border-color: #1152FB;
+}
+
+input.radio:checked~label:before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: #1152FB;
+    position: absolute;
+    left: 5px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 1px solid #1152FB;
+
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+}

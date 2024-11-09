@@ -1,0 +1,10 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target" : { 
+        "namespace": "android_app", 
+        "package_name": "com.tradeally",
+        "sha256_cert_fingerprints": [
+            "F7:D0:91:83:22:5A:5B:89:60:88:C8:B1:CF:E9:30:97:B9:3B:EC:33:1B:34:F9:F7:EC:AC:30:99:64:14:96:37"
+        ] 
+    }
+}]

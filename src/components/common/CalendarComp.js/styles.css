@@ -1,0 +1,170 @@
+/* start calendar */
+  .react-calendar {
+    width: 320px;
+    max-width: 100%;
+    font-size: 14px;
+    background-color: white;
+    /* padding: 27px; */
+    border-radius: 20px;
+    border: none;
+    font-family: "rocGrotesk-medium";
+    line-height: 1.125em;
+  }
+
+  .react-calendar.react-calendar--doubleView {
+    width: 100%;
+  }
+
+  .react-calendar button {
+    width: 35px;
+    height: 35px;
+  }
+  .react-calendar--doubleView .react-calendar__viewContainer {
+    gap: 30px
+  }
+  .react-calendar__navigation__label {
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+  }
+  .react-calendar__navigation__label__divider {
+    opacity: 0;
+  }
+  .react-calendar__month-view__weekdays {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .react-calendar__navigation button {
+    color: #202020;
+    min-width: 44px;
+    background: none;
+    font-family: "rocGrotesk-medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 8px;
+  }
+  .react-calendar__navigation button:enabled:hover,
+  .react-calendar__navigation button:enabled:focus {
+    background-color: white;
+  }
+  .react-calendar__navigation button[disabled] {
+    background-color: #f0f0f0;
+  }
+  abbr[title] {
+    text-decoration: none;
+  }
+  
+  
+  .react-calendar__tile:enabled:hover,
+  .react-calendar__tile:enabled:focus {
+    background: #f8f8fa;
+    color: #142837;
+    width: 35px;
+    height: 35px;
+    /* flex: none !important; */
+    border-radius: 50%;
+  }
+  .react-calendar__tile--now {
+    background: #6f48eb33;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    font-weight: 600;
+    flex: none !important;
+    color: #6B778C;
+  }
+  .react-calendar__tile--now abbr {
+    color: inherit;
+  }
+  .react-calendar__tile--now:enabled:hover,
+  .react-calendar__tile--now:enabled:focus {
+    background: #6f48eb33;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    font-weight: 600;
+    flex: none;
+    color: #6B778C;
+  }
+  .react-calendar__tile--hasActive:enabled:hover,
+  .react-calendar__tile--hasActive:enabled:focus {
+    background: #f8f8fa;
+  }
+  .react-calendar__tile--active {
+    background: #142837;
+    border-radius: 6px;
+    font-weight: 500;
+    color: white;
+  }
+  .react-calendar__tile--active:enabled:hover,
+  .react-calendar__tile--active:enabled:focus {
+    background: #142837;
+    color: white !important;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    /* flex: none !important; */
+  }
+  .react-calendar__tile--active:enabled:hover abbr,
+  .react-calendar__tile--active:enabled:focus abbr{
+    color: inherit;
+  }
+
+  .react-calendar--selectRange .react-calendar__tile--hover {
+    background-color: #f8f8fa;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    /* flex: none !important; */
+  }
+  .react-calendar__tile--range {
+    background: #F4F5F7;
+    color: #142837 !important;
+    border-radius: 0;
+    
+  }
+  .react-calendar__tile--rangeStart {
+    border-radius: 50%;
+    background: #142837 !important;
+    width: 35px;
+    height: 35px;
+    flex: none !important;
+    color: white !important;
+  }
+  .react-calendar__tile--rangeEnd {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    flex: none !important;
+    background: #142837;
+    color: white !important;
+  }
+
+  .react-calendar__tile--range abbr,
+  .react-calendar__tile--rangeStart abbr,
+  .react-calendar__tile--rangeEnd abbr,
+  .react-calendar__month-view__days__day--neighboringMonth abbr {
+    color: inherit;
+  }
+  
+  .react-calendar__month-view__days__day--neighboringMonth {
+    color: #6B778C !important;
+  }
+  
+  .react-calendar__navigation__arrow.react-calendar__navigation__next2-button,
+  .react-calendar__navigation__arrow.react-calendar__navigation__prev2-button {
+    display: none;
+  }
+  
+  .react-calendar__month-view__days__day--weekend {
+    color: #202020;
+  }
+  /* end calendar */
+  
+  @media screen and (max-width: 1000px) {
+    .react-calendar {
+      width: auto;
+    }
+  }
